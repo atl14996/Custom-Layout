@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etEnterQuestion"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="ENTER QUESTION HERE"/>
+
+    <EditText
+        android:id="@+id/etEnterAnswer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="ENTER ANSWER HERE"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK TO CONFIRM"
+        android:textSize="30sp"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="36sp"/>
+
+
+</merge>
