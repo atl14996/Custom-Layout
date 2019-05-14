@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <com.example.week7day3homework.CustomLayout
         android:id="@+id/lytCustomLayout"
@@ -13,6 +14,7 @@
 
     <Button
         android:id="@+id/btnNewActivity"
+        android:text="CLICK FOR NEW ACTIVITY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"/>
