@@ -6,19 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.ContentViewEvent;
+
 
 public class MainActivity extends AppCompatActivity {
     CustomLayout customLayout;
     TextView tvAnswer;
+    Button btnNewActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tvAnswer = findViewById(R.id.tvAnswer);
+        btnNewActivity = findViewById(R.id.btnNewActivity);
 
         customLayout = findViewById(R.id.lytCustomLayout);
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SecondActivity.class));
         overridePendingTransition(R.anim.fadeout, R.anim.fadeout);
 
-        Answers.getInstance().logContentView(new ContentViewEvent().putContentName("Tweet");
+
     }
 }
+
